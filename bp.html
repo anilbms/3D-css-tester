@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background-Position test</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bg.css">
+</head>
+<body>
+  <header><h1>Background-Position transition Tester</h1></header>
+  <section>
+    <form>
+      <fieldset>
+        <legend>Container width</legend>
+        <label for="containerwidth">length in percentage pixel</label> <br/>
+        0px <input id="containerwidth" type="range" min="0" max="500" step="5" value="100" /> 500px
+      </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Container Height</legend>
+        <label for="containerheight">length in percentage pixel</label> <br/>
+        0px <input id="containerheight" type="range" min="0" max="500" step="5" value="100" /> 500px
+      </fieldset>
+      <fieldset>
+        <legend>Background position x-axis</legend>
+        <label for="bgposx">length in percentage %</label> <br/>
+        -100% <input id="bgposx" type="range" min="-100" max="200" step="5" value="100" /> 200%
+      </fieldset>
+      <fieldset>
+        <legend>Background position y-axis</legend>
+        <label for="bgposy">length in percentage %</label> <br/>
+        -100% <input id="bgposy" type="range" min="-100" max="200" step="5" value="100" /> 200%
+      </fieldset>
+            <fieldset>
+        <legend>
+          <input type="checkbox" id="bgsize" checked>
+          <label for="bgsize">Background Size</label>
+        </legend>
+        <div>
+         <fieldset>
+             <p>
+                <label>Select Background-size type</label><br/>            
+                <input type = "radio"
+                       name = "bgSize"
+                       id = "sizeCover"
+                       value = "sizeValue"
+                        />
+                <label for = "sizeSmall">Cover</label>                
+                <input type = "radio"
+                       name = "bgSize"
+                       id = "sizeContain"
+                       value = "contain" />
+                <label for = "sizeMed">Contain</label>
+       
+                <input type = "radio"
+                       name = "bgSize" 
+                       id = "sizeValue"
+                       value = "sizevalue"
+                       checked = "sizeValue" />
+                <label for = "sizeLarge">value</label>
+              </p>       
+          </fieldset>
+           <fieldset id="bgSizeXY">
+              <legend>background-size pixel</legend>
+              <label for="bgsizepx">length in pixel</label> <br/>
+              -100px <input id="bgsizepx" type="range" min="-100" max="200" step="5" value="100" /> 200px
+              <label for="bgsizepy">length in percentage pixel</label> <br/>
+              -100px <input id="bgsizepy" type="range" min="-100" max="200" step="5" value="100" /> 200px
+          </fieldset>
+        </div>
+      </fieldset>
+    </form>
+    <div id="container">
+    </div>
+    <div id="code"></div>
+  </section>
+  <aside>
+    <div id="vid"><h2>Confused? Check this video</h2>
+    <video width="600" height="360" controls preload="none" poster="http://cf.cdn.vid.ly/5i4m8p/poster.jpg"><source src="http://cf.cdn.vid.ly/5i4m8p/mp4.mp4" type="video/mp4"><source src="http://cf.cdn.vid.ly/5i4m8p/webm.webm" type="video/webm"><source src="http://cf.cdn.vid.ly/5i4m8p/ogv.ogv" type="video/ogg"><a target="_blank" href="http://vid.ly/5i4m8p"><img src="http://cf.cdn.vid.ly/5i4m8p/poster.jpg" width="500"></a></video></div>
+  </aside>
+  <footer>
+    <a href="http://www.w3.org/html/logo/">
+    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics">
+    </a><p>Written by <a href="http://twitter.com/codepo8">Chris Heilmann (@codepo8)</a> you can tell me about bugs and fix them <a href="https://github.com/codepo8/3D-css-tester">on GitHub</a>.</p>
+  </footer>
+  <script src="bp.js"></script>
+</body>
+</html>

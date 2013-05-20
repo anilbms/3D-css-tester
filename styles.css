@@ -89,7 +89,7 @@ fieldset div {
   -ms-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
-  height: 118px;
+  height: 150px;
 }
 fieldset div.hide {
   height: 0;
@@ -171,7 +171,7 @@ form {
   right: 10px;
   top: 10px;
   padding: 10px;
-  width: 220px;
+  width: 250px;
   border-radius: 5px;
 }
 #code {

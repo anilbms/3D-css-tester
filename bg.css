@@ -1,0 +1,17 @@
+#container {
+	background-color: blue;
+}
+
+#bgSizeXY {
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+  height: 120px;
+}
+
+#bgSizeXY.hide{
+height: 0;
+}
